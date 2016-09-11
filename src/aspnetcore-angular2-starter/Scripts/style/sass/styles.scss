@@ -1,0 +1,98 @@
+@import '_typography';
+@import '_variables';
+@import 'mdl-checkbox';
+@import 'mdl-button';
+
+@import 'navbar';
+@import 'main-content';
+@import 'section-hero';
+@import 'section-wizard.scss';
+@import 'prefooter';
+@import 'footer';
+@import 'schematic.scss';
+@import 'breadcrumbs.scss';
+
+.base {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  font-family: $font-stack;
+  background-color: $background-color;
+  color: $background-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+body {
+  @extend .base;
+  margin: 0;
+  min-height: 100%;
+}
+
+
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, .4);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: $white;
+    left: calc(50% - 200px);
+    max-height: calc(100% - 10em);
+    min-height: 10em;
+    overflow-y: auto;
+    position: fixed;
+    top: 5em;
+    width: 400px;
+    z-index: 1100;
+
+    .title {
+        background-color: $armadillo;
+
+        .right {
+            color: $black;
+            cursor: pointer;
+        }
+
+        .right:hover {
+            color: lighten($black, 10%);
+        }
+    }
+
+    .title,
+    .body {
+        padding: .75em;
+    }
+
+    input,
+    select {
+        height: auto;
+        margin-bottom: 7px;
+    }
+
+    .buttons {
+        float: right;
+        margin: 1em;
+        margin-right: 0;
+
+        .flat {
+            background-color: $white;
+            color: $black;
+            line-height: 1.1em;
+        }
+    }
+}
+
+
+
+
+
+
+
+

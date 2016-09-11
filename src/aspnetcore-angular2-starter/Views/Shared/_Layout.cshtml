@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>@ViewBag.Title</title>
+</head>
+<body>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <img src="~/img/user1.jpg" alt="loggedIn" class="headshot" />
+        <span id="userName">@User.Identity.Name</span>
+    }
+    else
+    {
+        <b>Hi!!!!!!!!!!!!!!!!!!!</b>
+
+    }
+  <div>
+    @RenderBody()
+
+
+  </div>
+    <environment names="Development">
+        <script type="text/javascript" src="http://localhost:5000/dist/polyfills.js"></script>
+        <script type="text/javascript" src="http://localhost:5000/dist/vendor.js"></script>
+        <script type="text/javascript" src="http://localhost:5000/dist/app.js"></script>
+    </environment>
+    <environment names="Production,Staging">
+        <script type="text/javascript" src="~/dist/polyfills.js"></script>
+        <script type="text/javascript" src="~/dist/vendor.js"></script>
+        <script type="text/javascript" src="~/dist/app.js"></script>
+    </environment>
+
+</body>
+</html>

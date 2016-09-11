@@ -1,0 +1,28 @@
+@import '_variables';
+
+
+.section--pre-footer {
+    background-color: $prefooter-background;
+    padding: 60px 0;
+    text-align: center;
+}
+.logos {
+    background-color: $prefooter-logo-box;
+    border-radius: 5px;
+}
+
+.section--pre-footer {
+    .section__block {
+        max-width: 1200px;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+    p {
+        color: $homer-dark-text;
+        font-size: 22px;
+        line-height: 30px;
+        max-width: 525px
+    }
+}

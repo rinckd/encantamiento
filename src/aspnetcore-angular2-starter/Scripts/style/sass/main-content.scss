@@ -1,0 +1,181 @@
+@import '_variables';
+
+.main-content {
+    margin-top: 56px;
+    min-height: 1024px
+}
+@media only screen and (max-width: $min-width) {
+    .main-content {
+        min-height: calc(100vh - 56px - 136px - 54px - 1px)
+    }
+}
+@media only screen and (min-width: $min-width + 1px) {
+    .main-content {
+        min-height: calc(100vh - 56px - 56px - 1px)
+    }
+}
+
+
+
+
+.main-workspace .section--app {
+    padding: 40px 0 0 0;
+    min-height: 600px;
+    width: 100%;
+    p {
+        color: #000000;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .app-card.mdl-card {
+        text-align: center;
+        margin: 0 auto;
+        background: #fefefe;
+        margin-top: 5px;
+        min-height: 450px;
+        min-width: $min-width;
+        width: 98%;
+        .mdl-layout__tab {
+            width: 100px;
+        }
+        .mdl-layout__tab:hover {
+            color: #fff;
+        }
+        .is-active {
+           font-weight: 500;     
+
+        }
+
+        a > .material-icons {
+                font-size: 16px;
+        }
+        .mdl-tabs__tab-bar {
+            width: 100%;
+            background: $background-color;
+            height: auto;
+        }
+        .shift-left {
+            margin: 5px 18px 0px 0px;
+        }
+        .mdl-button {
+            margin: 3px 0px 0px 0px;
+            background-color: #E8E8E8;
+            color: black;
+            padding: 0;
+            width: 28px;
+            font-size: 20px;
+            height: 28px;
+            border-radius: 50%;
+            z-index: 7;
+        }
+        .mdl-button:hover {
+            background-color: #D8D8D8;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+        }
+        li { 
+            cursor: pointer;  
+
+        }
+        .mdl-card__supporting-text {
+            width: auto;
+            margin: 10px 0 0 0;
+        }
+        .mdl-card--border {
+            margin: 25px 0px 13px 0px;
+        }
+        .align-left {
+            text-align: left;
+            margin-left:0; 
+            margin-right:auto;
+        }
+        .align-right {
+            text-align: right;
+            margin-left:auto; 
+            margin-right:0;
+        }
+    }
+}
+
+
+
+
+$height: 300px;
+$timing: .25s;
+/* Rules for using icons as black on a light background. */
+.material-icons {
+      vertical-align: middle;
+}
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.mdl-tooltip--fancy {
+  overflow: hidden;
+  font-size: 16px;
+  color: #ffffff;
+  
+  &:before {
+    content: '';
+    background-color: rgba(20,20,20,.9);
+    border-radius: $height;
+    height: $height;
+    left: 50%;
+    margin-left: -($height/2);
+    margin-top: -($height/2);
+    top: 0;
+    position: absolute;
+    transform: scale(1);
+    width: 256px;
+    animation: mdl-tooltip--fancy-hide $timing linear;
+    z-index: -1;
+  }
+  
+  //&.mdl-tooltip--large .mdl-tooltip__background 
+  &.mdl-tooltip--large:before {
+    animation-duration: ($timing / 2);
+  }
+  
+  .mdl-tooltip__content {
+    position: relative;
+  }
+  
+  &.is-active {
+    &:before {
+      animation: mdl-tooltip--fancy-show $timing linear;
+    }
+    
+    &.mdl-tooltip--large:before {
+      animation-duration: ($timing / 2);
+    }
+  }
+}
+
+// tooltip keyframes
+
+@keyframes mdl-tooltip--fancy-show {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes mdl-tooltip--fancy-hide {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

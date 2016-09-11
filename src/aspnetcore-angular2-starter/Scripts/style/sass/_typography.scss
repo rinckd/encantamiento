@@ -1,0 +1,87 @@
+@import '_variables';
+
+.typography {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+}
+
+.small-typography {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0
+}
+
+h1 {
+  @extend .typography;
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -.02em;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  @extend .typography;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+h3 {
+  @extend .typography;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+h4 {
+  @extend .typography;
+  font-weight: 400;
+  line-height: 32px;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 24px;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+h5 {
+  @extend .typography;
+  font-size: 20px;
+  letter-spacing: .02em;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+h6 {
+  @extend .typography;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: .04em;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+p {
+  @extend .typography;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none
+}
+a img {
+    border: 0
+}
+a:hover {
+    text-decoration: none
+}

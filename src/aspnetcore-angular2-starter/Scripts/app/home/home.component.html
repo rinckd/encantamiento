@@ -1,0 +1,65 @@
+<section class="section--hero">
+  <div class="mdl-grid">
+    <div class="homer__banner mdl-card mdl-shadow--4dp">
+      <div class="mdl-card__title">
+        <div class="mdl-card__title-text">Welcome to Tortuga</div>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <button ng-click="ctrl.next()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+          Create New Project
+        </button>        
+        <p>My Message: {{message}}</p>
+        <ul>
+          <li *ngFor="let value of values">
+            <span>{{value.name}} </span>
+          </li>
+        </ul>
+          <p>{{currentSeal.color}}</p>
+
+        <div class="mdl-color--whitemdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+          <div class="mdl-cell mdl-cell--12-col">
+            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+              <select ng-model="ctrl.selectedProblem" name="existing_project" ng-options="problem.name for problem in ctrl.problems" ng-change="ctrl.openProblem()" class="mdl-selectfield__select"></select>
+              <label for="existing_project" class="mdl-selectfield__label">Choose Existing Project :</label>
+            </div>
+            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+              <select ng-model="ctrl.selectedSample" name="sample_project" ng-options="sample.name for sample in ctrl.samples" ng-change="ctrl.openSample()" class="mdl-selectfield__select"></select>
+              <label for="sample_project" class="mdl-selectfield__label">Load Sample Project</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div ng-show="!ctrl.maxProblems"></div>
+      <div ng-show="ctrl.maxProblems">
+         
+        <p><button ng-click='ctrl.manageProjects()'>button</button></p>
+        <p><button ng-click="$state.go('app.manage')">Manage My Projects</button></p>
+          
+      </div>
+    </div>
+  </div>
+</section>
+<div class="mdl-grid homer__help">
+  <div class="section__block mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet ">
+    <div class="content__item mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title">
+        <div class="mdl-card__title-text">What is this?</div>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>You wake up groggy, in a hospital gown. The doctor asks you, What time is it? Most likely, you will answer {{_date}}</p>
+        <p>He is asking you this, because it is at a very deep level of your conciousness, and he can quickly tell if you brain is functioning correcly or not</p>
+          <p>But, why is it {{month}}? What if July was not named by decree, by Julius Caesar, but instead by another culture entirely?</p>
+          <p>What if another calendar marked time just as well as the current one, but had no trappings of Imperialism?</p>
+      </div>
+    </div>
+      <div class="content__item mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title">
+        <div class="mdl-card__title-text">How do I use Quickstart?</div>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>To use Quickstart you provide the model with technology options, component costs, and resource availability. HOMER uses these inputs to simulate different system configurations or combinations of components and generates results that you can view as a list of feasible configurations sorted by net present cost.</p>
+        <p>HOMER also displays simulation results in a wide variety of tables and graphs that help you compare configurations and evaluate them on their economic and technical merits.  </p>
+      </div>
+    </div>
+  </div>
+</div>

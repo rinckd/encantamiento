@@ -1,0 +1,205 @@
+@import '_variables';
+
+
+.design-card.mdl-card {
+    background: black;
+    width: auto;
+    flex: 1;
+}
+
+.project-card.mdl-card {
+    width: auto;
+    background: white;
+}
+@media only screen and (max-width: $min-width) {
+    .project-card.mdl-card {
+        width: 100px;
+    }
+}
+@media only screen and (min-width: $min-width) {
+    .project-card.mdl-card {
+        width: 200px;
+    }
+}
+@media only screen and (min-width: $min-width + 100px) {
+    .project-card.mdl-card {
+        width: auto;
+    }
+}
+
+
+.add-component-icon {
+    width: $icon-height - 10px;
+    height: $icon-width - 10px;
+    margin: 5px 3px;
+    background-color:#ffffff;
+    font-weight: normal;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    /* ReSharper disable once CssNotResolved */
+    font-smooth: always;
+    -webkit-box-shadow: 1px 1px 3px #333;
+    -moz-box-shadow: 1px 1px 3px #333;
+    box-shadow: 1px 1px 3px #333;
+    
+    text-decoration: none;
+    [class^="icon-"], [class*=" icon-"] {
+        font-size: 36px;
+        font-weight: normal;
+        margin: 2px 0px 0px 0px;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+}
+.add-component-card {
+    border-radius: 10px;
+    width: 60px;
+    background-color: $schematic-background;
+    margin: 0px 0px 0px 40px;
+    padding: 5px;
+    overflow: visible;
+    z-index: auto;
+
+}
+
+.add-component-icon:hover {
+    font-weight: normal;
+    -webkit-box-shadow: 2px 2px 3px #333333;
+    -moz-box-shadow: 2px 2px 3px #333333;
+    box-shadow: 2px 2px 3px #333333;
+    background: #FFFFFF;
+    border: solid #666666 1px;
+    text-decoration: none;
+}
+
+.add-component-icon[disabled=disabled], .add-component-icon:disabled {
+    background-color: #dcdcdc;
+}
+
+.schematic-button {
+    position: absolute;
+    width: $icon-height;
+    height: $icon-width;
+    background-color:#ffffff;
+    font-weight: normal;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    /* ReSharper disable once CssNotResolved */
+    font-smooth: always;
+    -webkit-box-shadow: 1px 1px 3px #333;
+    -moz-box-shadow: 1px 1px 3px #333;
+    box-shadow: 1px 1px 3px #333;
+    
+    text-decoration: none;
+    [class^="icon-"], [class*=" icon-"] {
+        font-size: 46px;
+        font-weight: normal;
+        margin: 2px 0px 0px 0px;
+        box-shadow: none;
+        text-shadow: none;
+    }
+}
+.schematic-button:hover {
+    font-weight: normal;
+    -webkit-box-shadow: 2px 2px 3px #333333;
+    -moz-box-shadow: 2px 2px 3px #333333;
+    box-shadow: 2px 2px 3px #333333;
+    background: #FFFFFF;
+    border: solid #666666 1px;
+    text-decoration: none;
+}
+.schematic-cell {
+
+}
+.schematic-card {
+    flex: 0 1 150px;
+    background: $homer-black;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+    margin: auto;
+    height: 660px;
+    min-width: 395px;
+    float: left;
+    overflow: visible;
+    z-index: auto;
+    border-radius: 10px;
+    .mdl-card__supporting-text {
+        padding: 0px;
+    }
+
+    .mdl-card__supporting-text > p {
+        color: white;
+        margin: 0px;
+        padding: 10px;
+    }
+    .mdl-card__title {
+        padding: 5px 10px;
+        margin: 0;
+        background: #eeeeee; /* Old browsers */
+        background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+    }
+
+    .mdl-card__title-text {
+            font-size: 26px;
+            font-weight: 600;
+            margin: 0;
+        }
+}
+.schematic {
+    schematic-button > .mdl-button > .mdl-js-button {
+        background-color: white;
+    }
+    .schematic-container {
+        .mdl-tooltip--fancy {
+            font-size: 12px;
+        }
+        border-radius: 10px;
+        border: none;
+        background: $schematic-background;
+        padding: 0px;
+        margin: 0px;
+        width: 300px;
+        position: relative;
+    }
+    .schematic-sidebar {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .schematic-margins {
+        margin: 12px;
+    }
+    p.schematic-text {
+        width: 70px;
+        margin: 3px 0px 0px 14px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        fill: black;
+        font-weight: bold;
+        font-size: 0.7em;
+        text-overflow: ellipsis;
+        color: #1e1e1e;
+        text-shadow: 0px 1px 0px #fff;
+        font-size: 14px;
+    }
+
+    p.schematic-text:hover {
+        overflow: visible;
+    }
+
+
+}

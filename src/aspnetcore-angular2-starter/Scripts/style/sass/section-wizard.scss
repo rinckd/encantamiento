@@ -1,0 +1,348 @@
+﻿@import '_variables.scss';
+  .wizard-step {
+        width: auto;
+        margin: 1px 0;
+        background-color: $homer-interface;
+        color: $white;
+        border-top: 1px solid #444;
+        box-shadow: 3px 3px 4px rgba(0,0,0,.7);
+        z-index: 1;
+    }
+ .help-button {
+   width: 120px;
+ }
+.help-card.mdl-card {
+    margin: 0 auto;
+    background: #fefefe;
+    border-radius: 10px;
+    margin-top: 5px;
+    min-height: 450px;
+    min-width: 820px;
+    .mdl-card__title {
+      padding: 8px 16px;
+      min-height: 60px;
+      font-size: 24px;
+      color: white;
+      background-color: $homer-interface-buttons;
+    }
+    p {
+      padding: 10px;
+    }
+    .help-title {
+      font-size: 18px;
+      margin-left: 10px;
+      font-weight: 600;
+    }
+
+}
+
+.main-workspace .section--wizard {
+  background-color: $main-workspace;
+  padding: 40px 0 0 0;
+  min-height: 600px;
+  width: 100%;
+  p {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 10px;
+  }
+  
+
+  .wizard-card.mdl-card {
+    text-align: center;
+    margin: 0 auto;
+    background: #fefefe;
+    border-radius: 10px;
+    margin-top: 5px;
+    min-height: 450px;
+    min-width: $min-width - 20px;
+    max-width: 1200px;
+    .wizard-title.mdl-card__title {
+      padding: 8px 16px;
+      background-color: #fefefe;
+    }
+    .wizard-checkbox {
+      font-size: 16px;
+      font-weight: 400;
+      padding: 10px;
+      text-align: left;
+
+    }
+    .mdl-card__title-text {
+      font-size: 26px;
+      font-weight: 600;
+      margin: 0;
+    }
+    .wizard-data {
+      text-align: left;
+      font-size: 14px;
+      margin: 0 10px;
+      padding: 0px;
+    }
+
+
+    .mdl-card--border {
+        margin: 25px 0px 13px 0px;
+    }
+
+    .align-left {
+        text-align: left;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .align-right {
+        text-align: right;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .mdl-card__title {
+        z-index: 0;
+        min-height: 50px;
+    }
+  }
+  .google-map-location {
+    width: auto;
+    border-bottom: 1px solid #666;
+  }
+  .location-search {
+      background-color: #eeeeee;
+      padding: 0px 10px;
+      margin: 0;
+      vertical-align: middle;
+
+      .input-group, p {
+          font-size: 20px;
+      }
+  }
+
+  .wind-turbine-options {
+      background: #cccccc;
+      padding: 0px 10px;
+      margin: 0;
+      vertical-align: middle;
+
+      .input-group, p {
+          font-size: 20px;
+      }
+  }
+
+  .project-name {
+      padding: 1px 0px 0px 0px;
+      margin: 0;
+      text-align: left;
+  }
+
+  .project-notes-textfield {
+      padding: 10px;
+  }
+
+  .sensitivity-checkbox {
+      padding: 0 10px;
+  }
+
+  .location-card.mdl-card {
+    display: inline-block;
+    width: 380px;
+    height: 260px;
+    margin: 1rem;
+    margin-left: 0px;
+    padding-left: 0px;
+    position: relative;
+
+    .mdl-textfield__input {
+      vertical-align: bottom;
+    }
+
+    .mdl-card__title-text {
+      font-size: 20px;
+    }
+
+    .mdl-card__title {
+      color: $black;
+      min-height: 20px;
+      @extend .white-background-gradient;
+    }
+    p {
+      text-align: left;
+      padding: 5px;
+      margin: 0px;
+    }
+    .mdl-card__supporting-text {
+      width: auto;
+      padding: 0px;
+      margin: 0px;
+
+
+    }
+  }
+
+  .solar-card-right.mdl-card {
+      display: inline-block;
+      width: 520px;
+      height: 450px;
+      border-radius: 10px;
+      margin-top: 1px;
+      margin-left: 0px;
+      padding-left: 0px;
+      position: relative;
+      .mdl-card__supporting-text {
+      }
+      .mdl-card__title-text {
+        font-size: 20px;
+      }
+
+      p {
+              text-align: left;
+      font-size: 14px;
+      margin: 0 10px;
+      padding: 0px;
+      }
+      .mdl-card__title {
+          color: #fefefe;
+          background: #000099;
+      }
+  }
+
+  .empty-component-spacer {
+      height: 505px;
+  }
+
+  .wind-card.mdl-card {
+      display: inline-block;
+      width: 400px;
+      height: 450px;
+      border-radius: 10px;
+      margin-top: 1px;
+      margin-left: 0px;
+      padding-left: 0px;
+      position: relative;
+
+      .mdl-textfield__input {
+          vertical-align: bottom;
+      }
+
+      .mdl-card__title-text {
+          font-size: 20px;
+      }
+
+      .mdl-card__title {
+          color: #fefefe;
+          background: #000099;
+      }
+
+      .mdl-card__supporting-text {
+        p {
+          text-align: left;
+          padding: 0;
+          margin: 0;
+        }
+      }
+  }
+
+  .solar-card-left.mdl-card {
+      display: inline-block;
+      width: 260px;
+      height: 220px;
+      border-radius: 10px;
+      margin-top: 1px;
+      margin-left: 0px;
+      padding-left: 0px;
+      position: relative;
+
+      .mdl-textfield__input {
+          vertical-align: bottom;
+      }
+
+      .mdl-card__title-text {
+        font-size: 20px;
+      }
+
+      .mdl-card__title {
+          color: #fefefe;
+          background: #000099;
+      }
+
+      .mdl-card__supporting-text {
+      }      
+  }
+
+
+  .load-card.mdl-card {
+      display: inline-block;
+      width: 350px;
+      height: 180px;
+      padding: 0;
+      border-radius: 10px;
+      margin: 1rem;
+      position: relative;
+      :focus {
+        outline: none;
+      }
+      .mdl-textfield__input {
+          vertical-align: bottom;
+      }
+
+      .mdl-card__title-text {
+          font-size: 20px;
+      }
+
+      .mdl-card__title {
+          color: #fefefe;
+          background: #000099;
+      }
+
+      .mdl-card__supporting-text {
+          width: auto;
+          padding: 0px;
+          margin: 0px;
+
+          p {
+              padding: 5px;
+              margin: 0px;
+          }
+      }
+  }
+
+      .load-card.mdl-card:hover {
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      }
+
+  .selected-load {
+      float: left;
+      border-radius: 10px;
+      margin: 6px 0px 0px 3px;
+      width: 343px;
+      height: 190px;
+      z-index: 100;
+      transition: all 0.25s ease-in-out;
+      -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+  }
+
+      .selected-load.active,
+      .selected-load.active:hover {
+          border: 2px solid #74b9f0;
+          box-shadow: 0 0 7px #51cbee;
+          -webkit-box-shadow: 0 0 7px #51cbee;
+          -moz-box-shadow: 0 0 7px #51cbee;
+      }
+}
+
+.load-spacing {
+  padding: 0;
+  margin: 0 8px;
+}
+
+.learn-more-nav {
+  margin: -3px 0 0 -120px;
+}
+
+.wizard-navigation {
+  padding: 20px 10px 20px 10px;
+
+  .mdl-button {
+      margin: 5px;
+  }
+}

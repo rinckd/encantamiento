@@ -1,0 +1,66 @@
+$light-gray: #9e9e9e;
+$quickstart-orange: #F16A22;
+$homer-primary: #E2231A;
+$homer-secondary: #051D49;
+$homer-dark-grey-website: #484848;
+$homer-interface: #4468B0;
+$homer-interface-buttons: #173286;
+
+
+$black: #000000;
+$white: #ffffff;
+$homer-black: #37474f;
+$moonstone-blue: #73a9c2;
+$armadillo: #484846;
+$white-lilac: #e7e5e8;
+
+// Bootstrap-style
+$primary:         #337ab7;
+$success:         #5cb85c;
+$info:            #5bc0de;
+$warning:         #f0ad4e;
+$danger:          #d9534f;
+$prefooter-foreground: #859ba6;
+
+$font-stack: Roboto, Helvetica, Arial, sans-serif;
+$font-header: Lora,  Helvetica, Arial, sans-serif;
+
+$main-workspace: #263238;
+$background-color: #37474f;
+$link-color: #008394;
+
+
+$header-text: #ffffff;
+
+$schematic-background: #C0C0C0;
+
+$footer-background: #37474f;
+$footer-foreground: #9e9e9e;
+
+$prefooter-background: #263238;
+$prefooter-logo-box: #ddd;
+
+
+$homer-banner: rgba(250, 250, 250, 0.9);
+
+$homer-text: $homer-black;
+$homer-dark-text: $black;
+
+$button: $armadillo;
+$button-text: $white-lilac;
+$button-hover: #888888;
+
+
+$icon-height: 50px;
+$icon-width: 50px;
+$min-width: 840px;
+
+.white-background-gradient {
+  background: #eeeeee; /* Old browsers */
+  background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+}
